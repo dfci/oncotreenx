@@ -159,7 +159,7 @@ def lookup_text(g, text):
         for n in g.nodes():
 
             # build the lookup.
-            lu[g.node[n]['text']] = n
+            lu[g.nodes[n]['text']] = n
 
         # save it for re-use.
         g.graph['text_lu'] = lu
